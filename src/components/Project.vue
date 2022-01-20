@@ -127,9 +127,6 @@ export default {
         position: absolute;
         top: -4vh;
         text-align: center;
-        // bottom: 5%;
-        // left: 5%;
-        // right: 5%;
         padding: 0.5em;
         font-weight: 500;
         font-size: 18px;
