@@ -23,7 +23,9 @@
       <div class="info">
         <div class="infoContainer">
           <h3 data-aos="zoom-out-right">{{ proj.name }}</h3>
-          <p data-aos="zoom-out-right">{{ proj.descriptionEN }}</p>
+          <p data-aos="zoom-out-right">
+            {{ $store.getters.isPT ? proj.descriptionPT : proj.descriptionEN }}
+          </p>
         </div>
       </div>
       <div class="imgContainer">
@@ -52,10 +54,12 @@
           </div>
         </div>
         <a :href="proj.github" target="_blank" data-aos="zoom-out-left"
-          ><i class="fab fa-github"></i>See Code</a
+          ><i class="fab fa-github"></i
+          >{{ $store.getters.isPT ? "Ver Código" : "See Code" }}</a
         >
         <a :href="proj.liveserver" target="_blank" data-aos="zoom-out-left"
-          ><i class="fas fa-globe"></i>Live-server</a
+          ><i class="fas fa-globe"></i
+          >{{ $store.getters.isPT ? "Ver Site" : "Online Demo" }}</a
         >
       </div>
     </div>

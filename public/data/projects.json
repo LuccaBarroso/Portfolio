@@ -3,7 +3,7 @@
     "id": "0",
     "name": "project example",
     "descriptionPT": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime consectetur impedit, sed sint quo aliquam esse incidunt dolorum nulla possimus, qui earum ratione velit nesciunt! Dignissimos error harum earum illum repellendus nesciunt animi voluptatum placeat ab. Rerum sint necessitatibus libero!",
-    "descriptionEN": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime consectetur impedit, sed sint quo aliquam esse incidunt dolorum nulla possimus, qui earum ratione velit nesciunt! Dignissimos error harum earum illum repellendus nesciunt animi voluptatum placeat ab. Rerum sint necessitatibus libero!",
+    "descriptionEN": "ENGLISH Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime consectetur impedit, sed sint quo aliquam esse incidunt dolorum nulla possimus, qui earum ratione velit nesciunt! Dignissimos error harum earum illum repellendus nesciunt animi voluptatum placeat ab. Rerum sint necessitatibus libero!",
     "github": "www.google.com",
     "liveserver": "www.google.com",
     "stack": [
