@@ -188,11 +188,14 @@ export default {
       transform: rotate(15deg);
     }
   }
-  div {
+}
+.btns,
+.imgContainer,
+.info {
+  width: 50vw;
+  max-width: 500px;
+  img {
     max-width: 500px;
-    img {
-      max-width: 500px;
-    }
   }
 }
 .odd {
