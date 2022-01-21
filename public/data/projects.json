@@ -15,17 +15,20 @@
   },
   {
     "id": "1",
-    "name": "project example2",
-    "descriptionPT": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime consectetur impedit, sed sint quo aliquam esse incidunt dolorum nulla possimus, qui earum ratione velit nesciunt! Dignissimos error harum earum illum repellendus nesciunt animi voluptatum placeat ab. Rerum sint necessitatibus libero!",
-    "descriptionEN": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime consectetur impedit, sed sint quo aliquam esse incidunt dolorum nulla possimus, qui earum ratione velit nesciunt! Dignissimos error harum earum illum repellendus nesciunt animi voluptatum placeat ab. Rerum sint necessitatibus libero!",
-    "github": "www.google.com",
-    "liveserver": "www.google.com",
+    "name": "TO-DO",
+    "descriptionPT": "Nesse projeto, eu fiz o tão conhecido \"to-do\". Um dos meus primeiros projetos feitos com vue.js, apesar de ser um site simples, coloquei um pouco de tempo a mais para que o site tivesse animações e um estilo único.",
+    "descriptionEN": "The well-known to-do website. One the first in which I used vue.js, it was a simple yet useful experience, put some extra effort to make these cool transitions and this unique styling.",
+    "github": "https://github.com/LuccaBarroso/VueToDoList",
+    "liveserver": "https://practical-feynman-177483.netlify.app/",
     "stack": [
       { "name": "HTML", "icon": "html5" },
-      { "name": "CSS", "icon": "css3-alt" }
+      { "name": "CSS", "icon": "css3-alt" },
+      { "name": "JS", "icon": "js-square" },
+      { "name": "Sass", "icon": "sass" },
+      { "name": "VUE", "icon": "vuejs" }
     ],
-    "phoneImg": "exemploMockupCell.png",
-    "laptopImg": "exemploMockupPc.png"
+    "phoneImg": "todoPhone.png",
+    "laptopImg": "todoLaptop.png"
   },
   {
     "id": "2",
