@@ -2,21 +2,27 @@
   <div class="sticky">
     <div class="nav-bar">
       <p v-if="content !== ''">{{ content }}</p>
-      <i
-        class="fas fa-user"
-        @mouseover="content = 'About'"
-        @mouseleave="content = ''"
-      ></i>
-      <i
-        class="fas fa-file"
-        @mouseover="content = 'Projects'"
-        @mouseleave="content = ''"
-      ></i>
-      <i
-        class="fas fa-envelope"
-        @mouseover="content = 'Contact'"
-        @mouseleave="content = ''"
-      ></i>
+      <a href="#about">
+        <i
+          class="fas fa-user"
+          @mouseover="content = $store.getters.isPT ? 'Sobre' : 'About'"
+          @mouseleave="content = ''"
+        ></i>
+      </a>
+      <a href="#firstProject">
+        <i
+          class="fas fa-file"
+          @mouseover="content = $store.getters.isPT ? 'Projetos' : 'Projects'"
+          @mouseleave="content = ''"
+        ></i>
+      </a>
+      <a href="#footer">
+        <i
+          class="fas fa-envelope"
+          @mouseover="content = $store.getters.isPT ? 'Contato' : 'Contact'"
+          @mouseleave="content = ''"
+        ></i>
+      </a>
     </div>
   </div>
 </template>

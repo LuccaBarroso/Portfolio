@@ -18,6 +18,7 @@
         this.isOdd ? 'odd' : 'even',
         'project',
       ]"
+      :id="this.proj.id === '0' ? 'firstProject' : ''"
     >
       <div class="info">
         <div class="infoContainer">
@@ -100,6 +101,7 @@ export default {
   overflow: hidden;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  justify-items: center;
   .info {
     .infoContainer {
       h3 {
@@ -169,18 +171,23 @@ export default {
     flex-direction: column;
   }
   .imgContainer {
-    width: 25vw;
     img {
       width: 50vw;
     }
     .phoneImg {
       position: relative;
-      right: -12vw;
+      // right: 12vw;
     }
     .laptopImg {
       position: relative;
-      left: -7vw;
+      // left: -7vw;
       transform: rotate(15deg);
+    }
+  }
+  div {
+    max-width: 500px;
+    img {
+      max-width: 500px;
     }
   }
 }
@@ -205,7 +212,7 @@ export default {
   }
 }
 .first {
-  margin-top: -20vw;
+  margin-top: -10vw;
 }
 .spacer {
   aspect-ratio: 960/300;
@@ -234,7 +241,7 @@ export default {
   }
   .phoneImg {
     width: 75vw !important;
-    right: 2vw !important;
+    // right: 2vw !important;
   }
 }
 </style>

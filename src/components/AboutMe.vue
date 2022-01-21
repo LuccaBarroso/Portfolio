@@ -9,16 +9,9 @@
     ></div>
     <div class="darkBackGround">
       <div class="content">
-        <h3>About Me</h3>
+        <h3>{{ $store.getters.isPT ? "Sobre" : "About Me" }}</h3>
         <p>
-          As a computer science student, currently studying in Brazil. I am
-          always looking for new opportunities to gain knowledge and improve my
-          coding skills. Lately, I have been taking a lot of coding courses on
-          the web and am familiarized with Vue, Node.js and MongoDB. don't
-          forget to check some of my projects down the page. As you can see, I
-          also have a good level of English, have studied as an exchange student
-          in the US. If you need someone eager to learn, you found the right
-          person, send me an email, let's work together.
+          {{ $store.getters.isPT ? this.about[0] : this.about[1] }}
         </p>
       </div>
     </div>
@@ -33,9 +26,10 @@
 </template>
 
 <script>
+import about from "../../public/data/about.json";
 export default {
   data: function () {
-    return {};
+    return { about };
   },
 };
 </script>

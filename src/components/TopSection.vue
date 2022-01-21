@@ -2,7 +2,9 @@
   <div class="topSection">
     <div class="introduction">
       <p class="name">Lucca Barroso</p>
-      <p class="job">Web Developer</p>
+      <p class="job" id="about">
+        {{ $store.getters.isPT ? "Desenvolvedor Web" : "Web developer" }}
+      </p>
     </div>
   </div>
 </template>
@@ -10,9 +12,9 @@
 <script>
 export default {
   data: function () {
-    return {}
-  }
-}
+    return {};
+  },
+};
 </script>
 
 <style lang="scss" scoped>
