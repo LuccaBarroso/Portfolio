@@ -49,6 +49,7 @@ export default {};
   width: 100%;
 }
 .spacer {
+  z-index: 0;
   aspect-ratio: 960/300;
   width: 100%;
   margin-top: -100px;

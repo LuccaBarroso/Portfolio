@@ -101,11 +101,19 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.theProject {
+  overflow: hidden;
+  z-index: 2;
+}
 .project {
   overflow: hidden;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  max-width: 1010px;
+  padding: 0 55vw;
+  grid-gap: 10px;
   justify-items: center;
+  justify-content: center;
   .info {
     .infoContainer {
       h3 {
@@ -180,7 +188,7 @@ export default {
     }
     .phoneImg {
       position: relative;
-      // right: 12vw;
+      // right: vw;
     }
     .laptopImg {
       position: relative;
@@ -219,9 +227,10 @@ export default {
   }
 }
 .first {
-  margin-top: -10vw;
+  // margin-top: -10vw;
 }
 .spacer {
+  z-index: 0;
   aspect-ratio: 960/300;
   width: 100%;
   background-repeat: no-repeat;
@@ -230,6 +239,11 @@ export default {
 }
 .bottomSvg {
   transform: scaleX(-1) scaleY(-1);
+}
+@media only screen and (min-width: 800px) {
+  .first {
+    // margin-top: -10vw;
+  }
 }
 @media only screen and (min-width: 1400px) {
   h3 {
@@ -248,7 +262,7 @@ export default {
   }
   .phoneImg {
     width: 75vw !important;
-    // right: 2vw !important;
+    right: 10vw !important;
   }
 }
 </style>

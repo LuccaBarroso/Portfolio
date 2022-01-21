@@ -19,7 +19,7 @@
       class="spacer bottomSvg"
       :style="{
         backgroundImage:
-          'url(' + require('../../public/backgrounds/background2.svg') + ')',
+          'url(' + require('../../public/backgrounds/background5.svg') + ')',
       }"
     ></div>
   </div>
@@ -37,7 +37,7 @@ export default {
 <style lang="scss" scoped>
 .aboutMe {
   position: relative;
-  top: -15vw;
+  margin-top: -15vw;
   z-index: 1;
   color: white;
   display: flex;
@@ -65,6 +65,7 @@ export default {
   align-items: center;
 }
 .spacer {
+  z-index: 0;
   aspect-ratio: 960/300;
   width: 100%;
   background-repeat: no-repeat;
@@ -82,12 +83,12 @@ export default {
 }
 @media only screen and (max-width: 1100px) {
   .aboutMe {
-    top: -10vw;
+    margin-top: -10vw;
   }
 }
 @media only screen and (max-width: 650px) {
   .aboutMe {
-    top: 2vw;
+    margin-top: 2vw;
   }
 }
 </style>
