@@ -47,7 +47,7 @@
       <div class="btns">
         <div class="icons" data-aos="zoom-out-left">
           <div v-for="tec in proj.stack" :key="tec.icon" class="tec">
-            <i :class="'fab fa-' + tec.icon"></i>
+            <i :class="tec.icon"></i>
             <div class="tooltip-content">
               <p>{{ tec.name }}</p>
             </div>

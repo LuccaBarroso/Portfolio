@@ -1,17 +1,18 @@
 [
   {
     "id": "0",
-    "name": "project example",
-    "descriptionPT": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime consectetur impedit, sed sint quo aliquam esse incidunt dolorum nulla possimus, qui earum ratione velit nesciunt! Dignissimos error harum earum illum repellendus nesciunt animi voluptatum placeat ab. Rerum sint necessitatibus libero!",
-    "descriptionEN": "ENGLISH Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime consectetur impedit, sed sint quo aliquam esse incidunt dolorum nulla possimus, qui earum ratione velit nesciunt! Dignissimos error harum earum illum repellendus nesciunt animi voluptatum placeat ab. Rerum sint necessitatibus libero!",
-    "github": "www.google.com",
-    "liveserver": "www.google.com",
+    "name": "WowDrinks",
+    "descriptionPT": "Um dos meus primeiros projetos, um site de receitas de bebidas. Com esse projeto fica claro que eu tenho um bom conhecimento de JavaScript puro, HTML e CSS. O Back-end dessa aplicação não foi feito por mim, eu usei uma API gratuita chamada TheCocktailDB.",
+    "descriptionEN": "One of the very first projects I have made. It's a simple drink recipes website. With this project, you can see I have a good knowledge of plain javascript, HTML, CSS. The back-end wasn't made by me, I actually made use of a free API called TheCocktailDB.",
+    "github": "https://github.com/LuccaBarroso/Drink-Recipes",
+    "liveserver": "https://reverent-wing-fed8b7.netlify.app/",
     "stack": [
-      { "name": "HTML", "icon": "html5" },
-      { "name": "CSS", "icon": "css3-alt" }
+      { "name": "JS", "icon": "fab fa-js-square" },
+      { "name": "HTML", "icon": "fab fa-html5" },
+      { "name": "CSS", "icon": "fab fa-css3-alt" }
     ],
-    "phoneImg": "exemploMockupCell.png",
-    "laptopImg": "exemploMockupPc.png"
+    "phoneImg": "wowDrinksPhone.png",
+    "laptopImg": "wowDrinksLaptop.png"
   },
   {
     "id": "1",
@@ -21,28 +22,30 @@
     "github": "https://github.com/LuccaBarroso/VueToDoList",
     "liveserver": "https://practical-feynman-177483.netlify.app/",
     "stack": [
-      { "name": "HTML", "icon": "html5" },
-      { "name": "CSS", "icon": "css3-alt" },
-      { "name": "JS", "icon": "js-square" },
-      { "name": "Sass", "icon": "sass" },
-      { "name": "VUE", "icon": "vuejs" }
+      { "name": "HTML", "icon": "fab fa-html5" },
+      { "name": "CSS", "icon": "fab fa-css3-alt" },
+      { "name": "JS", "icon": "fab fa-js-square" },
+      { "name": "Sass", "icon": "fab fa-sass" },
+      { "name": "VUE", "icon": "fab fa-vuejs" }
     ],
     "phoneImg": "todoPhone.png",
     "laptopImg": "todoLaptop.png"
   },
   {
     "id": "2",
-    "name": "WowDrinks",
-    "descriptionPT": "One of the very first projects I have made. It's a simple drink recipes website. With this project, you can see I have a good knowledge of plain javascript, HTML, CSS. The back-end wasn't made by me, made use of a free API called TheCocktailDB.",
-    "descriptionEN": "Um dos meus primeiros projetos, um site de receitas de bebidas. Com esse projeto fica claro que eu tenho um bom conhecimento de JavaScript puro, HTML e CSS. O Back-end dessa aplicação não foi feito por mim, eu usei uma API gratuita chamada TheCocktailDB.",
-    "github": "https://github.com/LuccaBarroso/Drink-Recipes",
-    "liveserver": "https://reverent-wing-fed8b7.netlify.app/",
+    "name": "Ecommerce",
+    "descriptionPT": "Meu projeto mais recente, é um e-commerce onde os usuários podem se logar, registrar e fazer compras, para isso aprendi como gerar e usar JWTs. Esse foi meu primeiro projeto programando no back-end, foi uma experiência muito desafiadora, aprendi bastante com os desafios encontrados no caminho.",
+    "descriptionEN": "My most recent project, It's an e-commerce website in which users can register and log in to their accounts, for that I learned how to generate and use JWT. This is my first time working on the back-end, It was a challenging yet enjoyable experience, can't wait to start my next project.",
+    "github": "https://github.com/LuccaBarroso/vueecommerce",
+    "liveserver": "https://624f734fe7599413b0e4a7d2--bejewelled-medovik-3d6c48.netlify.app/",
     "stack": [
-      { "name": "JS", "icon": "js-square" },
-      { "name": "HTML", "icon": "html5" },
-      { "name": "CSS", "icon": "css3-alt" }
+      { "name": "JS", "icon": "fab fa-js-square" },
+      { "name": "Sass", "icon": "fab fa-sass" },
+      { "name": "VUE", "icon": "fab fa-vuejs" },
+      { "name": "NODE", "icon": "fab fa-node-js" },
+      { "name": "MongoDB", "icon": "fas fa-database" }
     ],
-    "phoneImg": "wowDrinksPhone.png",
-    "laptopImg": "wowDrinksLaptop.png"
+    "phoneImg": "ecommercePhone.png",
+    "laptopImg": "ecommerceLaptop.png"
   }
 ]
