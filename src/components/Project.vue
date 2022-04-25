@@ -5,11 +5,7 @@
       class="spacer"
       :style="{
         backgroundImage:
-          'url(' +
-          require('../../public/backgrounds/background' +
-            this.randomSvg() +
-            '.svg') +
-          ')',
+          'url(' + require('../../public/backgrounds/background5.svg') + ')',
       }"
     ></div>
     <div
@@ -45,12 +41,18 @@
         />
       </div>
       <div class="btns">
+        <p :class="[content == '' ? 'desactive' : 'active', 'stackName']">
+          {{ content }}
+        </p>
         <div class="icons" data-aos="zoom-out-left">
-          <div v-for="tec in proj.stack" :key="tec.icon" class="tec">
+          <div
+            v-for="tec in proj.stack"
+            @mouseover="content = tec.name"
+            @mouseleave="content = ''"
+            :key="tec.icon"
+            class="tec"
+          >
             <i :class="tec.icon"></i>
-            <div class="tooltip-content">
-              <p>{{ tec.name }}</p>
-            </div>
           </div>
         </div>
         <a :href="proj.github" target="_blank" data-aos="zoom-out-left"
@@ -68,11 +70,7 @@
       class="spacer bottomSvg"
       :style="{
         backgroundImage:
-          'url(' +
-          require('../../public/backgrounds/background' +
-            this.randomSvg() +
-            '.svg') +
-          ')',
+          'url(' + require('../../public/backgrounds/background2.svg') + ')',
       }"
     ></div>
   </div>
@@ -86,6 +84,7 @@ export default {
   data: function () {
     return {
       isOdd: this.proj.id % 2 !== 0,
+      content: "",
     };
   },
   props: ["proj"],
@@ -122,7 +121,7 @@ export default {
       }
       p {
         padding-left: 20px;
-        text-align: justify;
+        text-align: left;
         max-width: 30vw;
       }
     }
@@ -132,14 +131,33 @@ export default {
     flex-direction: column;
   }
   .btns {
+    .stackName {
+      color: #ec4e20;
+      font-size: 0;
+      opacity: 0;
+      min-height: 25px;
+      font-weight: bold;
+      padding-bottom: 15px;
+      padding-left: 10px;
+      transition: all 0.5s ease-in-out;
+    }
+    .stackName.active {
+      font-size: 1.5rem;
+      opacity: 1;
+      width: auto;
+      height: auto;
+      transition: all 0.5s ease-in-out;
+    }
     .icons {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
       .tec {
         position: relative;
       }
       .tec .tooltip-content {
         display: none;
         position: absolute;
-        top: -4vh;
+        top: -20px;
         text-align: center;
         padding: 0.5em;
         font-weight: 500;
@@ -153,7 +171,6 @@ export default {
         padding: 10px;
         font-size: 30px;
       }
-      display: flex;
     }
     a {
       margin: 8px;
@@ -211,6 +228,7 @@ export default {
   color: #fff;
   .btns {
     a,
+    .stackName,
     .icons i {
       color: #fff;
     }
@@ -254,6 +272,39 @@ export default {
   }
   .icons div i {
     font-size: 50px !important;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .project {
+    padding: 0;
+    grid-template-columns: 1fr;
+    .info {
+      width: 100%;
+      .infoContainer {
+        width: 80%;
+        p {
+          text-align: left;
+          width: 100% !important;
+          max-width: none !important;
+        }
+      }
+    }
+    .imgContainer {
+      .phoneImg {
+        position: relative;
+        left: 20vw;
+      }
+      .laptopImg {
+        position: relative;
+        left: -18vw;
+        width: 120%;
+        // top: -100px;
+        margin-top: -100px;
+      }
+    }
+    .btns {
+      padding-top: -1000px;
+    }
   }
 }
 @media only screen and (max-width: 800px) {

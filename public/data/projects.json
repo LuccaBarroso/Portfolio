@@ -7,7 +7,7 @@
     "github": "https://github.com/LuccaBarroso/Drink-Recipes",
     "liveserver": "https://reverent-wing-fed8b7.netlify.app/",
     "stack": [
-      { "name": "JS", "icon": "fab fa-js-square" },
+      { "name": "JavaScript", "icon": "fab fa-js-square" },
       { "name": "HTML", "icon": "fab fa-html5" },
       { "name": "CSS", "icon": "fab fa-css3-alt" }
     ],
@@ -24,7 +24,7 @@
     "stack": [
       { "name": "HTML", "icon": "fab fa-html5" },
       { "name": "CSS", "icon": "fab fa-css3-alt" },
-      { "name": "JS", "icon": "fab fa-js-square" },
+      { "name": "JavaScript", "icon": "fab fa-js-square" },
       { "name": "Sass", "icon": "fab fa-sass" },
       { "name": "VUE", "icon": "fab fa-vuejs" }
     ],
@@ -39,7 +39,7 @@
     "github": "https://github.com/LuccaBarroso/vueecommerce",
     "liveserver": "https://bejewelled-medovik-3d6c48.netlify.app/",
     "stack": [
-      { "name": "JS", "icon": "fab fa-js-square" },
+      { "name": "JavaScript", "icon": "fab fa-js-square" },
       { "name": "Sass", "icon": "fab fa-sass" },
       { "name": "VUE", "icon": "fab fa-vuejs" },
       { "name": "NODE", "icon": "fab fa-node-js" },
