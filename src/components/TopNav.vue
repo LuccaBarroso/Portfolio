@@ -1,7 +1,7 @@
 <template>
   <div class="sticky">
     <div class="nav-bar">
-      <p v-if="content !== ''">{{ content }}</p>
+      <p :class="[content == '' ? 'desactive' : 'active']">{{ content }}</p>
       <a href="#about">
         <i
           class="fas fa-user"
@@ -57,16 +57,21 @@ export default {
   clear: both;
   float: left;
   border-radius: 0 0 0 20px;
-  transition: all 0.2s ease-in-out;
-  p,
   i {
     padding: 10px !important;
     color: white;
     font-size: 22px;
+    transition: all 0.2s ease-in-out;
   }
   p {
-    transition: all 0.2s ease-in-out;
+    opacity: 0;
+    color: white;
+    transition: all 0.5s ease-in-out;
     font-weight: 300;
+  }
+  .active {
+    opacity: 1;
+    font-size: 22px;
   }
   i:hover {
     color: #ec4e20;
