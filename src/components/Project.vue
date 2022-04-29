@@ -298,7 +298,7 @@ export default {
         position: relative;
         left: -18vw;
         width: 120%;
-        // top: -100px;
+        top: -100px;
         margin-top: -100px;
       }
     }
