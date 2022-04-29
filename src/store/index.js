@@ -5,10 +5,7 @@ Vue.use(Vuex);
 
 export default new Vuex.Store({
   state: {
-    lang:
-      window.location.pathname.toUpperCase().replace("/", "") === "EN-US"
-        ? "EN"
-        : "PT",
+    lang: "PT",
   },
   mutations: {
     changeLang(state) {

@@ -22,6 +22,7 @@ import Stack from "./components/Stack";
 import Project from "./components/Project";
 import projectsFile from "../public/data/projects.json";
 import Footer from "./components/Footer";
+import { mapMutations } from "vuex";
 
 export default {
   name: "App",
@@ -35,6 +36,14 @@ export default {
     Project,
     Footer,
     TopNavLang,
+  },
+  methods: {
+    ...mapMutations(["changeLang"]),
+  },
+  created() {
+    if (new URLSearchParams(window.location.search).get("lang") === "EN") {
+      this.changeLang();
+    }
   },
 
   data: () => {

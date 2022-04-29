@@ -244,9 +244,6 @@ export default {
     color: #fff;
   }
 }
-.first {
-  // margin-top: -10vw;
-}
 .spacer {
   z-index: 0;
   aspect-ratio: 960/300;
@@ -257,11 +254,6 @@ export default {
 }
 .bottomSvg {
   transform: scaleX(-1) scaleY(-1);
-}
-@media only screen and (min-width: 800px) {
-  .first {
-    // margin-top: -10vw;
-  }
 }
 @media only screen and (min-width: 1400px) {
   h3 {
